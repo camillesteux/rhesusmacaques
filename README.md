@@ -24,7 +24,7 @@ liftOver ~/Liftover/liftover-3/Variants_for_liftover_5pop.txt ~/Liftover/liftove
 
 ### Annotating variants with SIFT 4G
 ***
-Building SIFT database (chromosome per chromosome to save time). The config file is available in the repository.
+Building SIFT database (chromosome per chromosome to save time). The config file is available in the repository (config_SIFTdb_chr_i.txt).
 ```bash
 perl make-SIFT-db-all.pl -config ~/SIFT_database/Mmul10_SIFT_chromo/chr${i}/config_SIFTdb_chr${i}.txt
 ```
@@ -126,7 +126,7 @@ for pop in brevicaudus lasiotis littoralis mulatta tcheliensis; do bcftools view
 for pop in brevicaudus lasiotis littoralis mulatta tcheliensis; do bcftools view -R ~/selscan/output2/${pop}.allchromo.notextr.nsl.bed ~/sfs/vcf/phased.converted.${pop}.del.vcf.gz -Ov -o ~/sfs/vcf/phased.converted.${pop}.del.notsel.vcf ; done
 ```
 
-Computing and resampling the SFS using python scripts (available in the repository).
+Computing and resampling the SFS using python scripts (available in the repository, sfs2.py and subsampling_sfs2.py).
 ```bash
 # Computing the SFS
 for pop in brevicaudus lasiotis littoralis mulatta tcheliensis; do  python3 sfs2.py vcf/phased.converted.${pop}.del.sel.vcf ${pop}.sel; done

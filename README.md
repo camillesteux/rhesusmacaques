@@ -1,7 +1,6 @@
 # Code for The Maintenance of deleterious variation in wild Chinese rhesus macaques
 ### Camille Steux and Zachary A. Szpiech
 
-\
 
 ### Filtering data
 ***

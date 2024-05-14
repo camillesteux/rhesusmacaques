@@ -457,7 +457,6 @@ kable(distrib_summary[1:10,], col.names = c("Prediction","Population","Individua
 ``` r
 leg <- c("deleterious" = "red","tolerated" = "blue")
 
-#For rapport de stage
 #Any class
 plot_list <- list()
 plot_list[[1]] <- ggplot_gtable(ggplot_build(ggplot() +
